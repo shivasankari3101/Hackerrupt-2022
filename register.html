@@ -22,6 +22,11 @@
         justify-content: space-between;
         min-height: 100vh;
     }
+    .form{
+        max-width: 100vw;
+        min-height: 150vh;
+        max-height: 500vh;
+    }
     footer a {
         color: #cbd3da;
     }
@@ -31,6 +36,7 @@
     .link{
         font-size: 10px;
     }
+
     </style>
 </head>
 
@@ -47,165 +53,16 @@
                         <li class="nav-item" role="presentation"><a class="nav-link text-light" href="aboutACE.html">About ACE</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link text-light" href="sponsor.html">Sponsors</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link text-light" href="faq.html">FAQ</a></li>
-                        <li class="nav-item" role="presentation"><a class="nav-link text-light" href="uniq.html">UNIQ</a></li>
 			                           <li class="nav-item" role="presentation"><a class="nav-link text-light" href="rules.html">Rules</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
-        <!-- <section class="text-center" style="padding: 25px 10px; font-family: Aldrich, sans-serif;color: red;background-color: rgba(255,255,255,0);">
-            <h1 style="color: rgb(255,0,0);">Registration</h1>
-            <form id="myForm" action="#">
-                <section id="t1">
-                    <h3 style="color: rgb(0,0,0);">Team Leader</h3><small>Note: * All-girl teams are requested to send a mail to acesvce20@gmail.com after registration to avail fee concessions for Women's Day.</small>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email" required="" placeholder="*Email" minlength="5" maxlength="30" autocomplete="on" inputmode="email"></div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" id="mobile" style="background-color: rgb(255,255,255);" name="mobile" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(6|7|8|9)\d{9}" autocomplete="on" inputmode="tel"></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college" required="" placeholder="*College" minlength="4" maxlength="60" autocomplete="on"></div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-				<div class="form-group d-md-flex align-items-md-end"><select class="form-control" style="background-color: rgb(255,255,255);" name="department" required=""><optgroup label="*Department"><option value="cse" selected disabled>Department</option><option value="cse">CSE</option><option value="it">IT</option><option value="eee">EEE</option><option value="ece">ECE</option><option value="mech">MECH</option><option value="civil">CIVIL</option></optgroup></select></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group d-md-flex align-items-md-end"><select class="form-control" style="background-color: rgb(255,255,255);" name="year" required=""><optgroup label="*Year"><option value="1" selected disabled>Year</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></optgroup></select></div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="number" id="team_no" style="background-color: rgb(255,255,255);" name="team_no" required="" placeholder="*Number of team members" min="1" max="4" step="1"></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="team_name" required="" placeholder="*Team Name" minlength="3" maxlength="20" autocomplete="on"></div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group d-md-flex align-items-md-end"><select class="form-control" style="background-color: rgb(255,255,255);" name="domain" required=""><optgroup label="*Domain"><option value="finance" selected="">Financial tech &amp; security</option><option value="education">Education</option><option value="STC">Smart transportation &amp; communication</option><option value="health">Health care</option><option value="eco">Eco friendly support &amp; rural development</option></optgroup></select></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text"  style="background-color: rgb(255,255,255);" name="driver_link" placeholder="Abstract link (optional)" minlength="10" maxlength="100" autocomplete="on" inputmode="url"><a class="btn btn-primary"
-                                    role="button" style="border: none;background-color: rgb(255,255,255);color: red;margin: 3px;font-size: 13px;" href="https://www.youtube.com/watch?v=Itn3WIhQ6NQ">Learn more</a></div>
-                                    
 
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group"><textarea id="absum"class="form-control form-control-lg" style="background-color: rgb(255,255,255);" name="abstract" required="" placeholder="*Your idea or project summary ( Min Characters : 100) " minlength="100" maxlength="1500" autocomplete="on"></textarea></div>
-                            <p class="link"> * Add Google Drive Links Only in the Abstract Link Section</p>
-                        </div>
 
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="password" id="pass" style="background-color: rgb(255,255,255);" required="" placeholder="*Password" minlength="8" maxlength="20"></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="password" id="cpass" style="background-color: rgb(255,255,255);" required="" placeholder="*Confirm password" minlength="8" maxlength="20"></div>
-                        </div>
-                         <span class="link"><b>Password should be minimum 8 characters</b></span> 
-                        <div class="col"><small id="message" style="font-size: 20px;"></small></div>
-                    </div>
-                </section>
-                <section class="rubberBand animated" id="t2">
-                    <h3 style="color: rgb(0,0,0);">Team member 2</h3>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name2" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email2" required="" placeholder="*Email" minlength="15" maxlength="30" autocomplete="on" inputmode="email"></div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="mobile2" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(6|7|8|9)\d{9}" autocomplete="on"></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college2" required="" placeholder="*College" minlength="10" maxlength="30" autocomplete="on"></div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group d-md-flex align-items-md-end"><select class="form-control" style="background-color: rgb(255,255,255);" name="department2" required=""><optgroup label="*Department"><option value="cse" selected="">Department</option><option value="cse">CSE</option><option value="it">IT</option><option value="eee">EEE</option><option value="ece">ECE</option></optgroup></select></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group d-md-flex align-items-md-end"><select class="form-control" style="background-color: rgb(255,255,255);" name="year2" required=""><optgroup label="*Year"><option value="1" selected="">Year</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></optgroup></select></div>
-                        </div>
-                    </div>
-                </section>
-                <section class="rubberBand animated" id="t3">
-                    <h3 style="color: rgb(0,0,0);">Team member 3</h3>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name3" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email3" required="" placeholder="*Email" minlength="15" maxlength="30" autocomplete="on" inputmode="email"></div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="mobile3" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(6|7|8|9)\d{9}" autocomplete="on"></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college3" required="" placeholder="*College" minlength="10" maxlength="30" autocomplete="on"></div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group d-md-flex align-items-md-end"><select class="form-control" style="background-color: rgb(255,255,255);" name="department3" required=""><optgroup label="*Department"><option value="cse" selected="">Department</option><option value="cse">CSE</option><option value="it">IT</option><option value="eee">EEE</option><option value="ece">ECE</option></optgroup></select></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group d-md-flex align-items-md-end"><select class="form-control" style="background-color: rgb(255,255,255);" name="year3" required=""><optgroup label="*Year"><option value="1" selected="">Year</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></optgroup></select></div>
-                        </div>
-                    </div>
-                </section>
-                <section class="rubberBand animated" id="t4">
-                    <h3 style="color: rgb(0,0,0);">Team member 4</h3>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="name4" required="" placeholder="*Full Name" minlength="3" maxlength="20" autocomplete="on"></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="email" style="background-color: rgb(255,255,255);" name="email4" required="" placeholder="*Email" minlength="15" maxlength="30" autocomplete="on" inputmode="email"></div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="mobile4" required="" placeholder="*Mobile" minlength="10" maxlength="15" pattern="(6|7|8|9)\d{9}" autocomplete="on"></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group"><input class="form-control" type="text" style="background-color: rgb(255,255,255);" name="college4" required="" placeholder="*College" minlength="10" maxlength="30" autocomplete="on"></div>
-                        </div>
-                    </div>
-                    <div class="form-row">
-                        <div class="col">
-                            <div class="form-group d-md-flex align-items-md-end"><select class="form-control" style="background-color: rgb(255,255,255);" name="department4" required=""><optgroup label="*Department"><option value="cse" selected="">Department</option><option value="cse">CSE</option><option value="it">IT</option><option value="eee">EEE</option><option value="ece">ECE</option></optgroup></select></div>
-                        </div>
-                        <div class="col">
-                            <div class="form-group d-md-flex align-items-md-end"><select class="form-control" style="background-color: rgb(255,255,255);" name="year4" required=""><optgroup label="*Year"><option value="1" selected="">Year</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option></optgroup></select></div>
-                        </div>
-                    </div>
-                </section>
-                <div id="recaptcha-container"></div><button class="btn btn-primary" id="submit" type="submit" style="border: none;color: white;background-color: rgb(255,0,0);">Register</button></form>
-        </section> -->
-        <div class="container-fluid text-center">
-            <h1>Registration closed.</h1>
-        </div>
+        <iframe class="form" src="https://docs.google.com/forms/d/e/1FAIpQLScRmvVzm0jfCCstQpMLkAehsZxYEIeJGeLJTUQDIWCFHNkvPg/viewform?embedded=true" frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
+   
         <footer class="text-center" style="font-family: Aldrich, sans-serif;max-height: 150px;width: 100%;padding: 10px;margin-bottom: 0px;background-position: bottom;">
             <div class="social"><a href="https://www.instagram.com/hackerrupt._/"><i class="icon ion-social-instagram" style="color: white;font-size: 30px;"></i></a></div>
             <ul class="list-inline">
@@ -214,16 +71,13 @@
                 <li class="list-inline-item"><a href="aboutACE.html">About us</a></li>
                 <li class="list-inline-item"><a href="register.html">Register</a></li>
             </ul>
-            <p class="copyright" style="font-size: 20px;">Hackerrupt © 2020</p>
+            <p class="copyright" style="font-size: 20px;">Hackerrupt © 2022</p>
         </footer>
     </div><!-- #main-container -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-app.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-analytics.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.6.2/firebase-auth.js"></script>
-    <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
    <!-- <script src="assets/js/script.min.js"></script>-->
     <script src="assets/js/register.js"></script>
