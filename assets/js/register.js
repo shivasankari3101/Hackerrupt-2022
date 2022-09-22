@@ -1,13 +1,12 @@
-var firebaseConfig = {
-	apiKey: "AIzaSyAsbSfe9NzDga5PnSUwpIlK3VLvHtQumtY",
-	authDomain: "hackerrupt2k20-404ae.firebaseapp.com",
-	databaseURL: "https://hackerrupt2k20-404ae.firebaseio.com",
-	projectId: "hackerrupt2k20-404ae",
-	storageBucket: "hackerrupt2k20-404ae.appspot.com",
-	messagingSenderId: "178516608596",
-	appId: "1:178516608596:web:dc2450cbb1f67f41048fc1",
-	measurementId: "G-6776NLM3ZX"
+const firebaseConfig = {
+    apiKey: "AIzaSyAS-ytXZg7zbqWpLmWDZvrx9oNlJaXntuM",
+    authDomain: "ace-hackerrupt.firebaseapp.com",
+    projectId: "ace-hackerrupt",
+    storageBucket: "ace-hackerrupt.appspot.com",
+    messagingSenderId: "447640034361",
+    appId: "1:447640034361:web:e9e4e805cc4a747143c1e8"
   };
+
   firebase.initializeApp(firebaseConfig);
   firebase.analytics();
   firebase.auth().languageCode = 'en';
