@@ -165,7 +165,8 @@ div.social-links {
 .team-boxed .item {
     text-align: center;
     background-color: #fff;
-    margin-bottom: 15px;
+    margin-bottom: 50px;
+    position: relative;
 }
 
 .team-boxed .item .box {
@@ -202,7 +203,10 @@ div.social-links {
 
 .team-boxed .social {
     font-size: 18px;
-    color: #a2a8ae
+    color: #a2a8ae;
+    position: absolute;
+    bottom: 5%;
+    left: 40%;
 }
 
 .team-boxed .social a {
@@ -210,6 +214,10 @@ div.social-links {
     margin: 0 10px;
     display: inline-block;
     opacity: .7
+}
+
+.team-boxed .social a .fa{
+    font-size: larger;
 }
 
 #demo,
