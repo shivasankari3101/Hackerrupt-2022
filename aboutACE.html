@@ -19,6 +19,29 @@
         h3.name{
             font-size: 1.2rem;
         }
+
+        .ace_header{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 85vh;
+        }
+
+        .intro.webteam {
+            max-width: 70vw;
+        }
+
+        .team_card{
+            border-radius: 30px;
+            box-shadow: 5px 10px 8px 10px #C6C3C2;
+        }
+
+        @media (min-width:768px){
+        .ace_oneliner{
+            width:50%;
+        }
+        }
     </style>
 
 </head>
@@ -38,17 +61,17 @@
                         <li class="nav-item" role="presentation"><a class="nav-link text-light" href="aboutACE.html">About ACE</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link text-light" href="sponsor.html">Sponsors</a></li>
                         <li class="nav-item" role="presentation"><a class="nav-link text-light" href="faq.html">FAQ</a></li>
-                                            <li class="nav-item" role="presentation"><a class="nav-link text-light" href="rules.html">Rules</a>
+                        <li class="nav-item" role="presentation"><a class="nav-link text-light" href="rules.html">Rules</a>
                         </li>
                     </ul>
             </div>
         </div>
     </nav>
-    <section class="text-center" style="font-family: Noto Serif, serif; padding: 30px;"><img style="width: 100px;height: 100px;"
-            src="assets/img/ace.png">
-        <h1 data-aos="fade-left" data-aos-delay="250" data-aos-once="true" style="font-weight:bold;">ACE</h1>
-        <h3 data-aos="fade-left" data-aos-delay="350" data-aos-once="true" style="font-weight:bold;">Association of Computer Engineers<br></h3>
-        <p data-aos="fade-left" data-aos-delay="400" data-aos-once="true" style="font-size: 20px;font-family: Noto Sans SC, sans-serif;"><br>ACE is the birth
+    <section class="text-center ace_header" style="font-family: Noto Serif, serif; padding: 30px;">
+        <img data-aos="zoom-in" data-aos-delay="500" data-aos-duration="500" data-aos-once="true" style="width: 100px;height: 100px;" src="assets/img/ace.png">
+        <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true" style="font-weight:bold;">ACE</h1>
+        <h3 data-aos="zoom-in-up" data-aos-delay="600" data-aos-duration="500" data-aos-once="true" style="font-weight:bold;">Association of Computer Engineers<br></h3>
+        <p data-aos="zoom-in-up" data-aos-delay="700" data-aos-duration="500" data-aos-once="true" class="ace_oneliner" style="font-size: 20px;font-family: Noto Sans SC, sans-serif;"><br>ACE is the birth
             place of many innovators, who have brought laurels to the department, in turn to the college. It is proud,
             happy and noteworthy that ACE has crossed two decades from its inception. ACE plays a significant role as
             an adjunct
@@ -59,15 +82,14 @@
     </section>
     <div class="team-boxed">
         <div class="container">
-            <div class="intro">
-
+            <div class="intro" data-aos="zoom-in-up">
                 <h2 class="text-center">Team 2021-2022</h2>
                 <p class="text-center" style="font-size: 20px; font-family: Aldrich;">Individual commitment to a&nbsp;<strong>group</strong>&nbsp;effort--that
                     is what makes a&nbsp;<strong>team</strong>&nbsp;work, a company work, a society work, a
                     civilization work.<br></p>
             </div>
-            <div class="row people" data-aos="fade-left" data-aos-delay="150" data-aos-once="true">
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+            <div class="row people">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" src="assets/img/office_bearers/Palaniappan S.jpg">
                         <h3 class="name">Palaniappan S<br></h3>
                         <p class="title">President</p>
@@ -76,7 +98,7 @@
                                 href="https://www.linkedin.com/in/palaniappan-subramanian/"><i class="fa fa-linkedin"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/office_bearers/MohanaKrishna Gopika V.jpg">
                         <h3 class="name">MohanaKrishna Gopika V</h3>
                         <p class="title">Vice president</p>
@@ -85,7 +107,7 @@
                                     class="fa fa-linkedin"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/office_bearers/Seshai Hari S B.jpeg">
                         <h3 class="name">Seshai Hari SB</h3>
                         <p class="title">Vice president</p>
@@ -95,7 +117,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/office_bearers/Swatika Ayyappan.jpg">
                         <h3 class="name">Swatika Ayyappan</h3>
                         <p class="title">Vice president</p>
@@ -106,7 +128,7 @@
                 </div>
             
 
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/office_bearers/Ritunjay M.jpg">
                         <h3 class="name">Ritunjay M</h3>
                         <p class="title">Secretary</p>
@@ -114,7 +136,7 @@
                         <div class="social"><a href="https://www.instagram.com/ritunjay7/"><i class="fa fa-instagram"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/office_bearers/S.Saineha.jpeg">
                         <h3 class="name">S Saineha</h3>
                         <p class="title">Treasurer</p>
@@ -123,7 +145,7 @@
                             href="https://www.linkedin.com/in/saineha-s-5a6a59192"><i class="fa fa-linkedin"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                         <div class="box"><img class="rounded-circle" src="assets/img/office_bearers/Swetha A(1).jpeg">
                             <h3 class="name" >Swetha A</h3>
                             <p class="title">Joint Secretary</p>
@@ -134,7 +156,7 @@
                     </div>
             
 
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" src="assets/img/office_bearers/Nivedita V P.jpg">
                         <h3 class="name">Nivedita VP<br></h3>
                         <p class="title">Executive Member</p>
@@ -142,7 +164,7 @@
                         <div class="social"><a href="https://www.linkedin.com/in/nivedita-palanisamy-4255631b4/"><i class="fa fa-linkedin"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" src="assets/img/office_bearers/Srinivasan K.jpg">
                         <h3 class="name">Srinivasan K</h3>
                         <p class="title">Executive Member</p>
@@ -152,7 +174,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" src="assets/img/office_bearers/Shri Rajamanikandan V.jpg">
                         <h3 class="name" >Shri Rajamanikandan V</h3>
                         <p class="title">Executive Member</p>
@@ -161,7 +183,7 @@
                     </div>
                 </div>
             
-                    <div class="col-md-5 col-lg-3 offset-md-1 item">
+                    <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                             <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/office_bearers/Himanshu Pant.jpeg">
                                 <h3 class="name">Himanshu Pant</h3>
                                 <p class="title">Executive Member</p>
@@ -169,7 +191,7 @@
                                 <div class="social"><a href="https://www.linkedin.com/in/himanshu-pant-3084581bb"><i class="fa fa-linkedin"></i></a></div>
                             </div>
                         </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/office_bearers/R Adithyarajen.jpg">
                         <h3 class="name">R Adithyarajen<br></h3>
                         <p class="title">Executive Member</p>
@@ -177,7 +199,7 @@
                         <div class="social"><a href="https://instagram.com/aadhish29?utm_medium=copy_link"><i class="fa fa-instagram"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" src="assets/img/office_bearers/Lakshmipriya R.jpg">
                         <h3 class="name">Lakshmipriya R</h3>
                         <p class="title">Executive Member</p>
@@ -186,7 +208,7 @@
                     </div>
                 </div>
             
-                    <div class="col-md-5 col-lg-3 offset-md-1 item">
+                    <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                             <div class="box"><img class="rounded-circle" src="assets/img/office_bearers/Lakshmi Sruthi K.jpg">
                                 <h3 class="name">Lakshmi Sruthi K</h3>
                                 <p class="title">Executive Member</p>
@@ -195,7 +217,7 @@
                                             class="fa fa-instagram"></i></a></div>
                             </div>
                         </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" src="assets/img/office_bearers/Yaswanth Krishnan A.JPG">
                         <h3 class="name">Yaswanth Krishnan A<br></h3>
                         <p class="title">Executive Member</p>
@@ -203,7 +225,7 @@
                         <div class="social"><a href="https://www.linkedin.com/in/yashwanth-krishnan-299247220"><i class="fa fa-linkedin"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                         <div class="box"><img class="rounded-circle" src="assets/img/office_bearers/Swetha Sakthi U .jpeg">
                             <h3 class="name">Swetha Sakthi U</h3>
                             <p class="title">Executive Member</p>
@@ -213,7 +235,7 @@
                     </div>
 
             
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/office_bearers/Aadesh VijayaRaghavan.jpg">
                         <h3 class="name">Aadesh VijayaRaghavan<br></h3>
                         <p class="title">Executive Member</p>
@@ -221,7 +243,7 @@
                         <div class="social"><a href="https://www.instagram.com/_.firetiger01._/?hl=en"><i class="fa fa-instagram"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/office_bearers/Niyas Hameed R F.jpeg">
                         <h3 class="name">Niyas Hameed RF</h3>
                         <p class="title">Executive Member</p>
@@ -236,15 +258,13 @@
 
     <div class="team-boxed">
         <div class="container">
-            <div class="intro">
+            <div class="intro" data-aos="zoom-in-up">
 
                 <h2 class="text-center">Design Team 2021-2022</h2>
-                <p class="text-center" style="font-size: 20px; font-family: Aldrich;">Individual commitment to a&nbsp;<strong>group</strong>&nbsp;effort--that
-                    is what makes a&nbsp;<strong>team</strong>&nbsp;work, a company work, a society work, a
-                    civilization work.<br></p>
+                <p class="text-center" style="font-size: 20px; font-family: Aldrich;">The 5 pixels behind ACE's quality resolution, made up of creative and forward-thinking individuals who work on producing posters, brochures, and certificates.<br></p>
             </div>
-            <div class="row people" data-aos="fade-left" data-aos-delay="150" data-aos-once="true">
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+            <div class="row people">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" src="assets/img/design_team/suraj_ram.jpg">
                         <h3 class="name">Surajram S<br></h3>
                         <p class="description">Learn to cross what comes your way!!</p>
@@ -252,7 +272,7 @@
                                 href="https://www.linkedin.com/in/surajram-s-2203a5183"><i class="fa fa-linkedin"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/design_team/shahid_hameed.jpg">
                         <h3 class="name">Shahid Ahmed MS</h3>
                         <p class="description">Have no fear of perfection -- you’ll never reach it.</p>
@@ -260,7 +280,7 @@
                                     class="fa fa-linkedin"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/design_team/taruna.jpg">
                         <h3 class="name">Taruna Indrajith</h3>                    
                         <p class="description">Beautiful Things Don't Ask For Attention</p>
@@ -269,7 +289,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/design_team/ahmed_tawfeeq.png">
                         <h3 class="name">Ahmed Tawfeeq PS</h3>                        
                         <p class="description">Inhale sky, Exhale stars</p>
@@ -279,7 +299,7 @@
                 </div>
 
                 
-                    <div class="col-md-5 col-lg-3 offset-md-1 item">
+                    <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                         <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/design_team/dharani.jpg">
                             <h3 class="name">Vempalli Dharani <br></h3>                        
                             <p class="description">Always try something new</p>
@@ -297,15 +317,15 @@
 
     <div class="team-boxed">
         <div class="container">
-            <div class="intro">
+            <div class="intro webteam" data-aos="zoom-in-up">
 
                 <h2 class="text-center">Web Team 2021-2022</h2>
-                <p class="text-center" style="font-size: 20px; font-family: Aldrich;">Individual commitment to a&nbsp;<strong>group</strong>&nbsp;effort--that
-                    is what makes a&nbsp;<strong>team</strong>&nbsp;work, a company work, a society work, a
-                    civilization work.<br></p>
+                <p class="text-center" style="font-size: 20px; font-family: Aldrich;">The Web Team is the &nbsp;<strong>architect behind the success of ACE.</strong>&nbsp; The tech geeks with a lot of creativity and enthusiasm have been the backbone of the club's web-related needs and involve a variety of students who are really passionate about web development. 
+                    Special thanks to the web team of 2021-2022 for leading us by laying the foundation for the Website.
+                    <br></p>
             </div>
-            <div class="row people" data-aos="fade-left" data-aos-delay="150" data-aos-once="true">
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+            <div class="row people">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" src="assets/img/web_team/Pradeep.jpg">
                         <h3 class="name">Pradeep S<br></h3>
                         <p class="description">Explore everything !!</p>
@@ -313,7 +333,7 @@
                                 href="https://www.linkedin.com/in/pradeep-s-88a569183"><i class="fa fa-linkedin"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/web_team/Shiva_Sankari.jpg">
                         <h3 class="name">Shiva Sankari C</h3>
                         <p class="description">Life is not partial to anyone</p>
@@ -321,7 +341,7 @@
                                     class="fa fa-linkedin"></i></a></div>
                     </div>
                 </div>
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/web_team/Hakash.jpg">
                         <h3 class="name">Hakash MP</h3>                    
                         <p class="description">Find comfort in Chaos</p>
@@ -330,7 +350,7 @@
                     </div>
                 </div>
 
-                <div class="col-md-5 col-lg-3 offset-md-1 item">
+                <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                     <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/web_team/Karthick_Lakshmanan.jpg">
                         <h3 class="name">Karthicklakshman P</h3>                        
                         <p class="description">Impossible is not in my dictionary</p>
@@ -340,7 +360,7 @@
                 </div>
 
                 
-                    <div class="col-md-5 col-lg-3 offset-md-1 item">
+                    <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                         <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/web_team/Avinash.jpg">
                             <h3 class="name">Avinash S<br></h3>                        
                             <p class="description">Winners don't lose hope</p>
@@ -348,7 +368,7 @@
                         </div>
                     </div>
 
-                    <div class="col-md-5 col-lg-3 offset-md-1 item">
+                    <div class="col-md-5 col-lg-3 offset-md-1 item team_card"  data-aos="zoom-in-up"   "  data-aos="zoom-in-up" >
                         <div class="box"><img class="rounded-circle" style="height: 160px;" src="assets/img/web_team/Sathyavarthan B.jpg">
                             <h3 class="name">Sathyavarthan B<br></h3>                        
                             <p class="description">Think twice, Code once !</p>

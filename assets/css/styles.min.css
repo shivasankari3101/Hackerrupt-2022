@@ -1,3 +1,7 @@
+.navbar{
+    height: 15vh;
+}
+
 footer {
     background-color: #292c2f;
     box-shadow: 0 1px 1px 0 rgba(0, 0, 0, .12);
@@ -172,7 +176,6 @@ div.social-links {
 .team-boxed .item .box {
     text-align: center;
     padding: 30px;
-    background-color: #fff;
     margin-bottom: 30px
 }
 
