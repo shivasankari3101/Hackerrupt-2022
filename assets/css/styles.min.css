@@ -1,3 +1,9 @@
+body{
+    background-image: url("assets/img/backgroundImage1.jpg");
+    background-size: cover;
+    background-attachment: fixed;
+}
+
 .navbar{
     min-height: 15vh;
 }
@@ -129,14 +135,14 @@ div.social-links {
 }
 
 .timer-digit {
-    color: red;
+    color: #dc3545;
     font-weight: 700;
     font-family: Aldrich
 }
 
 .form-control {
-    /*border: 2px solid red;*/
-    /*color: red;*/
+    /*border: 2px solid #dc3545;*/
+    /*color: #dc3545;*/
     background-color: #000
 }
 
@@ -247,6 +253,6 @@ p {
 }
 
 #demo {
-    color: red;
+    color: #dc3545;
     font-family: Bangers, cursive
 }

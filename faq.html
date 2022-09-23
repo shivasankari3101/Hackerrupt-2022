@@ -28,15 +28,7 @@
             display: flex;
             flex-direction: column;
             align-items: center;
-
-        }
-        #contact h2 {
-            font-family: Noto Serif, serif;
-            font-weight: 700;
-        }
-        #contact h4 {
-            font-family: Noto Serif, serif;
-
+            justify-content: center;
         }
         footer a {
         color: #cbd3da;
@@ -44,6 +36,28 @@
 
     #faq{
       margin: 5px;
+    }
+
+    #contact{
+      margin: 4% 0 4% 0;
+    }
+
+    #contact .contacts{
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      align-items: center;
+      font-family: Noto Sans SC, sans-serif;
+      min-height: 20vh;
+    }
+
+    #contact .contacts a{
+      text-decoration: none;
+      color: #000;
+    }
+
+    #contact .contacts a:hover{
+      text-decoration: underline;
     }
 
     .accordion-body{
@@ -75,7 +89,7 @@
 
 <body>
     <nav class="navbar navbar-dark navbar-expand-md bg-dark">
-        <div class="container-fluid"><a class="navbar-brand" style="font-family: 'Overpass Mono', monospace;color: #ffffff;font-size: 30px;" href="index.html"><i class="fa fa-code" style="color: rgb(255,0,0);"></i>&nbsp;Hackerrupt</a><button data-toggle="collapse" class="navbar-toggler"
+        <div class="container-fluid"><a class="navbar-brand" style="font-family: 'Overpass Mono', monospace;color: #ffffff;font-size: 30px;" href="index.html"><i class="fa fa-code" style="color: #dc3545;"></i>&nbsp;Hackerrupt</a><button data-toggle="collapse" class="navbar-toggler"
                 data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
             <div class="collapse navbar-collapse d-md-flex d-lg-flex justify-content-md-end justify-content-lg-end" id="navcol-1" style="font-family: Aldrich, sans-serif;">
                 <ul class="nav navbar-nav">
@@ -92,7 +106,7 @@
         </div>
     </nav>
     <section id="faq" style="padding: 10px;">
-        <h1 style="padding: 10px;color: red;font-family: Aldrich, sans-serif;" class="text-center">FAQ</h1>
+        <h1 style="padding: 10px;color: #dc3545;font-family: Aldrich, sans-serif;" class="text-center">FAQ</h1>
         
         <div class="accordion accordion-flush" id="accordionFlushExample">
             <div class="accordion-item">
@@ -295,13 +309,13 @@
           </div>
         
     </section>
-    <section id="contact" style="padding: 10px;margin: 40px auto">
-        <h2 style="padding: 0px;">Contact Us</h2>
-        <ul style="list-style: none;padding-left: 0;font-family: Noto Sans SC, sans-serif;">
-            <li>Barath G - 98846 30716</li>
-            <li>K.S. Aditya Krrish - 90032 53308</li>
-            <li>Saiharshith - 6383552605</li>
-        </ul>
+    <section id="contact">
+        <h2>Contact Us</h2>
+        <div class="contacts">
+            <a href="tel:+9566621878">Ritunjay - 9566621878</a>
+            <a href="tel:+7200036383">Adithyarajen Rajendriran - 7200036383</a>
+            <a href="tel:+8220010766">Yaswanth - 8220010766</a>
+        </div>
     </section>
     <footer class="text-center" style="font-family: Aldrich, sans-serif;max-height: 150px;width: 100%;padding: 10px;margin-bottom: 0px;background-position: bottom;">
             <div class="social"><a href="https://www.instagram.com/hackerrupt._/"><i class="icon ion-social-instagram" style="color: white;font-size: 30px;"></i></a></div>
