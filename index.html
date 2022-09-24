@@ -12,10 +12,35 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass+Mono">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <style>
+
+    .autoplay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -2;
+    }
+
+    .autoplay img{
+       width: 100%;
+       height: 100%;
+    }
+
+    .overlay{
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        z-index: -1;
+        background-color: rgb(41,44,47,0.96);
+    }
     #main-container {
         display: flex;
         flex-direction: column;
@@ -48,10 +73,20 @@
     footer a {
         color: #cbd3da;
     }
+
+    @media (max-width:767px){
+        .autoplay{
+            display: none;
+        }
+
+        .overlay{
+            background-color: rgb(41,44,47);
+        }
+    }
     </style>
 </head>
 
-<body style="background-color: rgb(41,44,47);">
+<body>
     <div id="main-container">
         <nav class="navbar navbar-dark navbar-expand-md bg-dark">
             <div class="container-fluid"><a class="navbar-brand" style="font-family: 'Overpass Mono', monospace;color: #ffffff;font-size: 30px;" href="index.html"><i class="fa fa-code" style="color: #dc3545;"></i>&nbsp;Hackerrupt</a><button data-toggle="collapse" class="navbar-toggler" data-target="#navcol-1"><span class="sr-only">Toggle navigation</span><span class="navbar-toggler-icon"></span></button>
@@ -69,6 +104,14 @@
                 </div>
             </div>
         </nav>
+
+        <div class="autoplay">
+            <div><img src="assets/img/hackerrupt/ace_pic.jpg" alt="" srcset=""></div>
+            <div><img src="assets/img/hackerrupt/ace_pic_1.JPG" alt="" srcset=""></div>
+            <div><img src="assets/img/hackerrupt/ace_pic.jpg" alt="" srcset=""></div>
+        </div>
+
+        <div class="overlay"></div>
         <section id="title" style="width: 100%;height: 100%;background-image: url(&quot;assets/img/backgroundImage.jpg&quot;);background-size: cover;background-repeat: no-repeat;background-position: center;padding: 30px;">
              
             <h1 class="text-center d-sm-flex justify-content-sm-center" data-aos="fade-left" data-aos-delay="700" data-aos-once="true" id="title-text" style="color: rgb(255,255,255);font-size: 2.5rem;font-family: Aldrich, sans-serif;font-weight: bold;padding: 20px;padding-top: 50px;">Hackerrupt'22</h1>
@@ -137,6 +180,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="assets/js/script.min.js"></script>
     <script src="assets/js/timer.js"></script>
 </body>
