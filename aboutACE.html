@@ -11,11 +11,63 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Cookie">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Overpass+Mono">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/ionicons/2.0.1/css/ionicons.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.css">
     <link rel="stylesheet" href="assets/css/styles.min.css">
     <style>
+        body{
+            overflow-x: hidden;
+        }
+
+       .carousel_container{
+         width: 100vw;
+         height: auto;
+         overflow: hidden;
+         position: relative;
+       }
+
+       .carousel{
+          width: 100%;
+          height: 100%;
+       }
+
+       .carousel img{
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+       }
+
+       .slick-next, .slick-prev{
+          width: 100px;
+          height: 100px;
+          z-index: 3;
+       }
+
+       .slick-next:before, .slick-prev:before{
+        font-size: 80px;
+        border-radius: 50%;
+       }
+
+       .slick-next{
+         right: 25px;
+       }
+
+       .slick-prev{
+        left: 25px;
+       }
+
+       .overlay{
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-color: rgba(0,0,0,0.5);
+        z-index: 2;
+       }
+
+
         h3.name{
             font-size: 1.2rem;
         }
@@ -25,7 +77,6 @@
             flex-direction: column;
             justify-content: center;
             align-items: center;
-            height: 85vh;
         }
 
         .intro.webteam {
@@ -38,10 +89,14 @@
         }
 
         @media (max-width:767px){
-            .ace_header{
-              height: 90vh;
+
+            .slick-next, .slick-prev{
+               display: none;
             }
 
+            .slick-next:before, .slick-prev:before{
+               display: none;
+            }
             .team-boxed .people {
                padding: 50px 0;
                display: flex;
@@ -55,6 +110,18 @@
         }
 
         @media (min-width:768px){
+
+        .navbar{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            z-index: 4;
+        }
+
+        .carousel_container{
+            height: 100vh;
+        }
         .ace_oneliner{
             width:50%;
         }
@@ -85,6 +152,15 @@
             </div>
         </div>
     </nav>
+    <section class="carousel_container">
+        <div class="carousel">
+            <div><img src="assets/img/carousel/carousel1.jpg" alt="Image 1"></div>
+            <div><img src="assets/img/carousel/carousel2.jpg" alt="Image 2"></div>
+            <div><img src="assets/img/carousel/carousel3.jpg" alt="Image 3"></div>
+        </div>
+        <div class="overlay"></div>
+    </section>
+
     <section class="text-center ace_header" style="font-family: Noto Serif, serif; padding: 30px;">
         <img data-aos="zoom-in" data-aos-delay="500" data-aos-duration="500" data-aos-once="true" style="width: 100px;height: 100px;" src="assets/img/ace.png">
         <h1 data-aos="fade-up" data-aos-delay="500" data-aos-duration="500" data-aos-once="true" style="font-weight:bold;">ACE</h1>
@@ -93,10 +169,7 @@
             place of many innovators, who have brought laurels to the department, in turn to the college. It is proud,
             happy and noteworthy that ACE has crossed two decades from its inception. ACE plays a significant role as
             an adjunct
-            to the course work.<br><br></p>
-            <!--<a class="btn btn-primary" role="button" data-bs-hover-animate="bounce"
-            style="color: rgb(0,0,0);font-size: 20px;background-color: rgba(0,0,0,0);border: 3px solid black;font-weight: bold;"
-            href="./aboutACE.html">Learn more</a>-->
+            to the course work.<br><br></p>        
     </section>
     <div class="team-boxed">
         <div class="container">
@@ -417,7 +490,7 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.1.1/aos.js"></script>
-
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
     <script src="assets/js/script.min.js"></script>
 </body>
