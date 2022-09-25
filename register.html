@@ -110,6 +110,7 @@
 
         <div id="main-container">
             <iframe class="form"
+                onload="check()"
                 src="https://docs.google.com/forms/d/e/1FAIpQLScRmvVzm0jfCCstQpMLkAehsZxYEIeJGeLJTUQDIWCFHNkvPg/viewform?embedded=true"
                 frameborder="0" marginheight="0" marginwidth="0">Loading…</iframe>
             <footer class="text-center" style="font-family: Aldrich,
@@ -142,6 +143,14 @@
             src="https://cdnjs.cloudflare.com/ajax/libs/rxjs/6.5.3/rxjs.umd.min.js"></script>
         <!-- <script src="assets/js/script.min.js"></script>-->
         <script src="assets/js/register.js"></script>
+        <script>
+              
+
+      check = () => {
+            $('html, body').animate({ scrollTop: 150 }, 'slow', 'swing');
+            setTimeout(google.script.host.close, 7);
+      };
+        </script>
     </body>
 
 </html>
